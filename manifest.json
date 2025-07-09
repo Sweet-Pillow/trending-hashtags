@@ -1,0 +1,14 @@
+{
+  "name": "Trending Hashtags",
+  "description": "A google chrome extension to automacally include the trending hashtags to twitter post.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
